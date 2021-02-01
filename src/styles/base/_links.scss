@@ -1,0 +1,29 @@
+.link {
+  font-family: $font-family-secondary;
+  font-weight: $font-weight-bold;
+  color: $primary-title-color;
+  transition: all 0.4s;
+}
+
+.link:hover,
+.link:focus {
+  color: $primary-color;
+}
+
+.activeLink {
+  color: $primary-color;
+}
+
+.footer__link {
+  font-family: $font-family-secondary;
+  font-weight: $font-weight-base;
+  color: $primary-text-color;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  transition: all 0.4s;
+}
+
+.footer__link:hover,
+.footer__link:focus {
+  color: $primary-color;
+}

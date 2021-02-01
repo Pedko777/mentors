@@ -1,0 +1,124 @@
+.header {
+  height: 6rem;
+  background-color: $primary-bg;
+  width: 100%;
+  box-shadow: 0rem 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
+  @include for-tablet-up {
+    padding: 0 4rem;
+  }
+  @include for-phone {
+    padding: 0 2rem;
+  }
+  &__nav {
+    width: 100%;
+    height: 100%;
+    font-family: $font-family-secondary;
+    font-weight: $font-weight-bold;
+    &-logo {
+      width: 19.5rem;
+      height: 2.8rem;
+      cursor: pointer;
+      fill: $primary-title-color;
+      transition: all 0.4s;
+      &-img {
+        fill: $primary-title-color;
+        transition: all 0.4s;
+      }
+    }
+    &-logo :hover,
+    &-logo :focus {
+      fill: $primary-color;
+      &-img {
+        fill: $primary-color;
+      }
+    }
+    &-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+
+      &-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-right: 4rem;
+        font-family: $font-family-secondary;
+        font-weight: $font-weight-bold;
+        font-size: 1.6rem;
+        &-item {
+          position: relative;
+        }
+      }
+      &-list li:not(:last-of-type) {
+        margin-right: 3.2rem;
+      }
+      &-buttons-box {
+        display: flex;
+      }
+      &-buttons-box :not(:nth-child(2)) {
+        margin-right: 2rem;
+      }
+      &-button-wrapper {
+        width: 8.4rem;
+        height: 3.2rem;
+      }
+    }
+    &-burger {
+      width: 3.2rem;
+      height: 2.3rem;
+      stroke: $primary-title-color;
+      &-img {
+        stroke-width: 0.3rem;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &-burger:hover,
+    &-burger:focus {
+      stroke: $primary-color;
+    }
+    &-btn {
+      width: 3.6rem;
+      height: 3.2rem;
+    }
+    &--desktop {
+      @include for-phone {
+        display: none;
+      }
+      @include for-tablet-up {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+    &--mobile {
+      @include for-phone {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      @include for-tablet-up {
+        display: none;
+      }
+    }
+  }
+  &__counter {
+    position: absolute;
+    box-sizing: content-box;
+    top: -1rem;
+    right: -1rem;
+    background-color: $primary-color;
+    width: 1.2rem;
+    height: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    &-text {
+      margin-left: -0.1rem;
+      text-align: center;
+      color: #fff;
+      font-size: 0.8rem;
+    }
+  }
+}

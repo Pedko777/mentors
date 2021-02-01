@@ -1,0 +1,7 @@
+.mentors-list {
+  margin: 0 auto;
+  display: grid;
+  justify-items: center;
+  grid-gap: 5rem 7rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}

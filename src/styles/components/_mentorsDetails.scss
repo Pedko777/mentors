@@ -1,0 +1,49 @@
+.mentors-details {
+  &__container {
+    margin: 0 auto;
+    @include for-tablet-up {
+      display: grid;
+      grid-template-columns: minmax(20rem, 25%) 1fr;
+      padding: 6rem 7.6rem 6rem 0;
+    }
+    @include for-phone {
+      padding: 3rem 2rem;
+    }
+    border-radius: 0.4rem;
+    max-width: 95.2rem;
+    background-color: $primary-bg;
+  }
+  &__left-side {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    @include for-phone {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__btn-box {
+    @include for-tablet-up {
+      box-sizing: content-box;
+      width: 12rem;
+      display: flex;
+      flex-direction: column;
+    }
+    @include for-phone {
+      width: 100%;
+    }
+
+    &--contact {
+      margin-bottom: 2rem;
+    }
+  }
+  &__titles {
+    color: $primary-title-color;
+    font-weight: $font-weight-bold;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+  }
+}

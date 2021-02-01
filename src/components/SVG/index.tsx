@@ -1,0 +1,15 @@
+export { default as BigLogo } from './BigLogo';
+export { default as Brain } from './Brain';
+export { default as Burger } from './Burger';
+export { default as Frame } from './Frame';
+export { default as Star } from './Star';
+export { default as Call } from './Call';
+export { default as Chat } from './Chat';
+export { default as Facebook } from './Facebook';
+export { default as Email } from './Email';
+export { default as Close } from './Close';
+export { default as Heart } from './Heart';
+export { default as Loupe } from './Loupe';
+export { default as Rate } from './Rate';
+export { default as Arrow } from './Arrow';
+export { default as Rating } from './Rating';

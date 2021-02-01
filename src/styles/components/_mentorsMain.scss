@@ -1,0 +1,80 @@
+.mentor-main {
+  @include for-phone {
+    width: 100%;
+    margin-bottom: 2rem;
+    display: flex;
+  }
+  &__avatar-box {
+    @include for-phone {
+      width: 8rem;
+      height: 8rem;
+      margin-right: 2rem;
+    }
+    @include for-tablet-up {
+      width: 14rem;
+      height: 14rem;
+      margin: 0 3rem;
+      margin-bottom: 1.6rem;
+    }
+  }
+  &__desc {
+    @include for-tablet-up {
+      text-align: center;
+    }
+    @include for-phone {
+      text-align: left;
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: space-between;
+    }
+    @include for-tablet-up {
+      margin-bottom: 1rem;
+    }
+    &-title {
+      color: $primary-title-color;
+      font-weight: $font-weight-bold;
+      font-size: 1.8rem;
+      line-height: 3.6rem;
+    }
+    &-position {
+      color: $primary-text-color;
+      font-size: 1.4rem;
+      line-height: 1.8rem;
+      font-weight: $font-weight-base;
+      @include for-tablet-up {
+        margin-bottom: 0.8rem;
+      }
+    }
+    &-rate {
+      font-weight: $font-weight-bold;
+      color: $primary-color;
+      font-size: 1.2rem;
+      line-height: 1.4rem;
+    }
+    &-reviews {
+      @include for-tablet-up {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      @include for-phone {
+        display: none;
+      }
+      color: #9ca3af;
+      margin-bottom: 2rem;
+      &-text {
+        font-weight: $font-weight-base;
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+      }
+    }
+  }
+  &__rating {
+    @include for-tablet-up {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    margin-bottom: 0.5rem;
+  }
+}

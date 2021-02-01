@@ -1,0 +1,42 @@
+.mentors-aside {
+  &__aspects-list {
+    display: flex;
+    flex-wrap: wrap;
+    @include for-tablet-up {
+      margin-bottom: 2rem;
+    }
+    @include for-phone {
+      margin-bottom: 1rem;
+    }
+    font-weight: $font-weight-base;
+    &-item {
+      border-radius: 50px;
+      padding: 0.3rem 1.6rem;
+      box-sizing: border-box;
+      border: 2px solid $primary-color;
+      margin-bottom: 1rem;
+      &-text {
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        color: $primary-color;
+      }
+    }
+  }
+  &__aspects-list li:not(:last-of-type) {
+    @include for-tablet-up {
+      margin-right: 2rem;
+    }
+    @include for-phone {
+      margin-right: 1rem;
+    }
+  }
+  &__profile {
+    margin-bottom: 2rem;
+    &-desc {
+      color: $primary-desc-color;
+      font-weight: $font-weight-base;
+      font-size: 1.4rem;
+      line-height: 2.1rem;
+    }
+  }
+}

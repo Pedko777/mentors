@@ -1,0 +1,68 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6rem;
+  background-color: $primary-bg;
+  width: 100%;
+  box-shadow: 0rem 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
+  font-family: $font-family-secondary;
+  font-weight: $font-weight-bold;
+  @include for-phone {
+    padding: 0 2rem;
+  }
+  @include for-tablet-up {
+    padding: 0 4rem;
+  }
+  &__nav {
+    width: 100%;
+    height: 100%;
+    &-logo {
+      width: 2.8rem;
+      height: 2.8rem;
+      cursor: pointer;
+      fill: $primary-title-color;
+      @include for-tablet-up {
+        margin-right: 4rem;
+      }
+    }
+    &-logo :hover,
+    &-logo :focus {
+      transition: all 0.4s;
+      fill: $primary-color;
+    }
+    &-left-side {
+      display: flex;
+      align-items: center;
+    }
+    &-list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1.6rem;
+    }
+    &-list li:not(:last-of-type) {
+      margin-right: 3.2rem;
+    }
+    &--desktop {
+      @include for-phone {
+        display: none;
+      }
+      @include for-tablet-up {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+    &--mobile {
+      @include for-phone {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      @include for-tablet-up {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,86 @@
+.mentor-modal {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  @include for-tablet-up {
+    padding: 2.7rem 4.7rem 2.7rem 4.7rem;
+    width: 40rem;
+  }
+  @include for-phone {
+    position: relative;
+    padding: 27rem 2.7rem 7rem 2.7rem;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+  }
+  &__top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+    @include for-phone {
+      align-self: center;
+    }
+    &-avatar {
+      width: 8rem;
+      height: 8rem;
+      margin-right: 2rem;
+    }
+    &-desc {
+      &-title {
+        font-size: 1.8rem;
+        line-height: 3.6rem;
+        text-align: center;
+        color: $primary-title-color;
+        font-weight: $font-weight-bold;
+      }
+      &-position {
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        font-weight: $font-weight-base;
+        color: $primary-text-color;
+      }
+    }
+  }
+  &__contacts {
+    display: flex;
+    justify-content: space-between;
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      &-icon {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        stroke: #fff;
+        margin-bottom: 0.4rem;
+        cursor: pointer;
+        &--call {
+          background-color: #22aa00;
+        }
+        &--chat {
+          background-color: #eaaa07;
+        }
+        &--facebook {
+          background-color: #3266a8;
+        }
+        &--email {
+          background-color: #ef5555;
+        }
+      }
+      &-text {
+        color: $primary-title-color;
+        font-weight: $font-weight-semibold;
+        font-size: 1.4rem;
+      }
+    }
+  }
+}

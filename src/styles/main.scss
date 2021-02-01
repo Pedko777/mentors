@@ -1,0 +1,34 @@
+// UTILS
+@import 'utils/variables';
+@import 'utils/mixin';
+
+// VENDORS
+@import-normalize;
+
+// BASE
+@import 'base/base';
+@import 'base/reset';
+@import 'base/links';
+
+// COMPONENTS
+@import 'components/buttons';
+@import 'components/app';
+@import 'components/mentorsList';
+@import 'components/titleBox';
+@import 'components/avatar';
+@import 'components/rating';
+@import 'components/errorMessage';
+@import 'components/card';
+@import 'components/mentorsDetails';
+@import 'components/mentorsMain';
+@import 'components/mentorAside';
+@import 'components/mentorReviews';
+@import 'components/modal';
+@import 'components/mentorModal';
+@import 'components/sidebar';
+@import 'components/searchForm';
+
+//LAYOUT
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/content';

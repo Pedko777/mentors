@@ -1,0 +1,56 @@
+.mentor__reviews {
+  &-list {
+    margin-bottom: 2rem;
+
+    &-item {
+      display: grid;
+      grid-template-columns: minmax(8.4rem, 8.4rem) 1fr;
+      margin-bottom: 2rem;
+      &-avatar {
+        width: 6rem;
+        height: 6rem;
+      }
+    }
+  }
+  &-desc {
+    &-wrapper {
+      @include for-tablet-up {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+    }
+    &-rating {
+      @include for-phone {
+        display: none;
+      }
+      @include for-tablet-up {
+        display: flex;
+      }
+    }
+    &-title {
+      color: $primary-title-color;
+      font-size: 1.6rem;
+      line-height: 1.8rem;
+
+      margin-bottom: 0.7rem;
+    }
+    &-text {
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+      color: $primary-desc-color;
+      font-weight: $font-weight-base;
+    }
+  }
+  &-btn {
+    display: flex;
+    @include for-tablet-up {
+      align-items: center;
+      justify-content: flex-end;
+    }
+    @include for-phone {
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "scss.lint.unknownAtRules": "ignore",
+  "jestrunner.jestCommand": "yarn test --",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "files.eol": "\n"
+}

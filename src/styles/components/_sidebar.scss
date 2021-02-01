@@ -1,0 +1,42 @@
+.sidebar {
+  z-index: 5;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+
+  &__left-side {
+    padding: 2.5rem 2.5rem 4rem 2.5rem;
+    background-color: $primary-bg;
+    width: 82%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    &-links {
+      font-weight: $font-weight-bold;
+      font-size: 2.4rem;
+      line-height: 2.8rem;
+      text-align: center;
+      & li:not(:last-of-type) {
+        margin-bottom: 2rem;
+      }
+    }
+    &-btn-wrapper {
+      box-sizing: content-box;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      & button:first-of-type {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+  &__right-side {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 18%;
+    cursor: pointer;
+  }
+}
